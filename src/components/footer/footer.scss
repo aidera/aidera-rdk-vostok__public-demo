@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables";
+
+footer {
+  background: $bg-color-1;
+  display: flex;
+  padding: 20px;
+  padding-left: 60px;
+  overflow: hidden;
+
+  a {
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin-right: 12px;
+    svg {
+      transition: $transition-1;
+    }
+    &:hover {
+      svg {
+        fill: grey;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+
+#float-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: $color-primary;
+  border-radius: 50%;
+  box-shadow: $shadow-1;
+  transition: $transition-1;
+  padding: 12px;
+  animation: 3s ease-in-out infinite alternate float-button__animation;
+  z-index: 9;
+  &:hover {
+    //background-color: $color-primary-hover;
+    box-shadow: $shadow-1-hover;
+  }
+  svg {
+    fill: white;
+  }
+
+  @keyframes float-button__animation {
+    0% {
+      bottom: 30px;
+    }
+    50% {
+      bottom: 30px;
+    }
+    55% {
+      bottom: 40px;
+    }
+    65% {
+      bottom: 30px;
+    }
+    75% {
+      bottom: 35px;
+    }
+    80% {
+      bottom: 30px;
+    }
+    100% {
+      bottom: 30px;
+    }
+  }
+}
